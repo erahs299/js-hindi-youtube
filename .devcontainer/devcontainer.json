@@ -1,115 +1,114 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
 {
-	"name": "Node.js",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/javascript-node:0-18",
+  "name": "Node.js",
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:0-18",
 
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  // "features": {},
 
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [],
 
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "yarn install",
+  // Use 'postCreateCommand' to run commands after the container is created.
+  // "postCreateCommand": "yarn install",
 
-	// Configure tool-specific properties.
-	
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"esbenp.prettier-vscode",
-				"vscode-icons-team.vscode-icons",
-				"hiteshchoudharycode.chai-theme"
-				
-			],
-			"settings": {
-				"editor.fontSize": 18,
-				"terminal.integrated.fontSize": 18,
-				"editor.wordWrap": "on",
-				"window.zoomLevel": 1
-				
-			},
-			"keyboardShortcuts":[
-				{
-					"key": "shift+o",
-					"command": "cursorLineEnd"
-				},
-				{
-					"key": "ctrl+shift+up",
-					"command": "-editor.action.insertCursorAbove",
-					"when": "editorTextFocus"
-				},
-				{
-					"key": "ctrl+shift+down",
-					"command": "-editor.action.insertCursorBelow",
-					"when": "editorTextFocus"
-				},
-				{
-					"key": "shift+k",
-					"command": "cursorDown",
-					"when": "textInputFocus"
-				},
-				{
-					"key": "down",
-					"command": "-cursorDown",
-					"when": "textInputFocus"
-				},
-				{
-					"key": "shift+j",
-					"command": "cursorLeft",
-					"when": "textInputFocus"
-				},
-				{
-					"key": "left",
-					"command": "-cursorLeft",
-					"when": "textInputFocus"
-				},
-				{
-					"key": "shift+i",
-					"command": "cursorUp",
-					"when": "textInputFocus"
-				},
-				{
-					"key": "up",
-					"command": "-cursorUp",
-					"when": "textInputFocus"
-				},
-				{
-					"key": "shift+l",
-					"command": "cursorRight",
-					"when": "textInputFocus"
-				},
-				{
-					"key": "right",
-					"command": "-cursorRight",
-					"when": "textInputFocus"
-				},
-				{
-					"key": "ctrl+alt+k",
-					"command": "editor.action.copyLinesDownAction",
-					"when": "editorTextFocus && !editorReadonly"
-				},
-				{
-					"key": "ctrl+shift+alt+down",
-					"command": "-editor.action.copyLinesDownAction",
-					"when": "editorTextFocus && !editorReadonly"
-				},
-				{
-					"key": "f5",
-					"command": "code-runner.run"
-				},
-				{
-					"key": "ctrl+alt+n",
-					"command": "-code-runner.run"
-				}
-			]
-			
-		}
-		
-	 }
+  // Configure tool-specific properties.
 
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "vscode-icons-team.vscode-icons",
+        "hiteshchoudharycode.chai-theme"
+      ],
+      "settings": {
+        "editor.fontSize": 18,
+        "terminal.integrated.fontSize": 18,
+        "editor.wordWrap": "on",
+        "window.zoomLevel": 1,
+        "keyboard.dispatch": "vscode",
+        "keyboardShortcuts": [
+          {
+            "key": "shift+o",
+            "command": "cursorLineEnd"
+          },
+          {
+            "key": "ctrl+shift+up",
+            "command": "-editor.action.insertCursorAbove",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "ctrl+shift+down",
+            "command": "-editor.action.insertCursorBelow",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "shift+k",
+            "command": "cursorDown",
+            "when": "textInputFocus"
+          },
+          {
+            "key": "down",
+            "command": "-cursorDown",
+            "when": "textInputFocus"
+          },
+          {
+            "key": "shift+j",
+            "command": "cursorLeft",
+            "when": "textInputFocus"
+          },
+          {
+            "key": "left",
+            "command": "-cursorLeft",
+            "when": "textInputFocus"
+          },
+          {
+            "key": "shift+i",
+            "command": "cursorUp",
+            "when": "textInputFocus"
+          },
+          {
+            "key": "up",
+            "command": "-cursorUp",
+            "when": "textInputFocus"
+          },
+          {
+            "key": "shift+l",
+            "command": "cursorRight",
+            "when": "textInputFocus"
+          },
+          {
+            "key": "right",
+            "command": "-cursorRight",
+            "when": "textInputFocus"
+          },
+          {
+            "key": "ctrl+alt+k",
+            "command": "editor.action.copyLinesDownAction",
+            "when": "editorTextFocus && !editorReadonly"
+          },
+          {
+            "key": "ctrl+shift+alt+down",
+            "command": "-editor.action.copyLinesDownAction",
+            "when": "editorTextFocus && !editorReadonly"
+          },
+          {
+            "key": "f5",
+            "command": "code-runner.run"
+          },
+          {
+            "key": "ctrl+alt+n",
+            "command": "-code-runner.run"
+          }
+
+          // Add more keybindings here
+        ]
+      }
+    }
+  }
+
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root"
 }
