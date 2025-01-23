@@ -31,7 +31,7 @@
 				"window.zoomLevel": 1
 				
 			},
-			"keybindings":[
+			"keyboardShortcuts":[
 				{
 					"key": "shift+o",
 					"command": "cursorLineEnd"
