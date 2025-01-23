@@ -6,7 +6,7 @@
         "**/.env": true,
         "**/.git": false,
         "**/.gitignore": true,
-        "editor.mouseWheelZoom": true,
-        "editor.minimap.enabled": false,
-    }
+    },
+    "editor.mouseWheelZoom": true,
+    "editor.minimap.enabled": false
 }
